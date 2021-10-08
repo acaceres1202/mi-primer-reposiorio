@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211006 13:43:32.522" rpa="false" schemaversion="2">
+<suite id="s1" name="Primeraatomatizacion" source="C:\Users\usuario\Desktop\Curso de QA\primeraatomatizacion.robot">
+<test id="s1-t1" name="G001 Busqueda de palabras en Google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com.py/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211006 13:43:33.102" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.py/'.</msg>
+<status status="PASS" starttime="20211006 13:43:33.102" endtime="20211006 13:43:37.527"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211006 13:43:37.528" endtime="20211006 13:43:37.641"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input</arg>
+<arg>casos de prueba</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211006 13:43:37.643" level="INFO">Typing text 'casos de prueba' into text field 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20211006 13:43:37.642" endtime="20211006 13:43:38.035"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211006 13:43:38.037" level="INFO">Clicking element 'xpath=/html/body/div[1]/div[2]/div/img'.</msg>
+<status status="PASS" starttime="20211006 13:43:38.036" endtime="20211006 13:43:38.298"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211006 13:43:38.302" level="INFO">Clicking button 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<status status="PASS" starttime="20211006 13:43:38.300" endtime="20211006 13:43:41.155"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>casos de prueba - Buscar con Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211006 13:43:41.174" level="INFO">Page title is 'casos de prueba - Buscar con Google'.</msg>
+<status status="PASS" starttime="20211006 13:43:41.157" endtime="20211006 13:43:41.175"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>casos de prueba</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211006 13:43:41.236" level="INFO">Current page contains text 'casos de prueba'.</msg>
+<status status="PASS" starttime="20211006 13:43:41.176" endtime="20211006 13:43:41.236"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211006 13:43:41.252" endtime="20211006 13:43:43.596"/>
+</kw>
+<status status="PASS" starttime="20211006 13:43:33.102" endtime="20211006 13:43:43.596"/>
+</test>
+<test id="s1-t2" name="G002 Hacer click en el boton de busquedas sin escribir palabras en Google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com.py/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211006 13:43:43.600" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.py/'.</msg>
+<status status="PASS" starttime="20211006 13:43:43.600" endtime="20211006 13:43:48.138"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211006 13:43:48.140" endtime="20211006 13:43:48.228"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211006 13:43:48.230" level="INFO">Clicking button 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<status status="PASS" starttime="20211006 13:43:48.229" endtime="20211006 13:43:48.422"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211006 13:43:48.438" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" starttime="20211006 13:43:48.423" endtime="20211006 13:43:48.438"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211006 13:43:48.440" endtime="20211006 13:43:50.725"/>
+</kw>
+<status status="PASS" starttime="20211006 13:43:43.600" endtime="20211006 13:43:50.725"/>
+</test>
+<doc>Existe en documento de texto con los pasos manuales
+Esta es mi primera automatizacion</doc>
+<status status="PASS" starttime="20211006 13:43:32.522" endtime="20211006 13:43:50.725"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Primeraatomatizacion">Primeraatomatizacion</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
