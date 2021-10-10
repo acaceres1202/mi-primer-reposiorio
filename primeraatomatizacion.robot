@@ -3,6 +3,7 @@ Documentation           Existe en documento de texto con los pasos manuales
 ...                     Esta es mi primera automatizacion
 Library                 SeleniumLibrary
 
+*** Variables ***
 
 *** Test Cases ***
 G001 Busqueda de palabras en Google
